@@ -37,9 +37,9 @@ public class LoudSpeakerModules extends ReactContextBaseJavaModule {
 	public void open(Boolean voice){
 		AudioManager audioManager = (AudioManager) reactContext.getSystemService(Context.AUDIO_SERVICE);
                 audioManager.setMode(AudioManager.MODE_IN_CALL);
-                if (!audioManager.isSpeakerphoneOn())
-                    audioManager.setSpeakerphoneOn(true);
-                audioManager.setMode(AudioManager.MODE_NORMAL);
+                // if (!audioManager.isSpeakerphoneOn())
+                //     audioManager.setSpeakerphoneOn(true);
+                // audioManager.setMode(AudioManager.MODE_NORMAL);
 	}
 	@ReactMethod
 	public void about(final Promise promise)
